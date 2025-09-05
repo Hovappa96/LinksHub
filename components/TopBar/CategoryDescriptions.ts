@@ -98,6 +98,7 @@ const categoryDescriptions: CategoryDescriptions = {
   swift:
     'Swift is a powerful and intuitive programming language developed by Apple. It is used to create apps for iOS, macOS, watchOS, and so on. Swift code is concise yet expressive (easier to understand and write).',
   css: 'Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts ',
+  sql: 'SQL (Structured Query Language) is a standardized, declarative language used to define, query, and manipulate structured data. It serves as a universal interface for interacting with data—across relational, columnar, and even modern NoSQL systems—making it the lingua franca of data management.',
 
   //Mobile
   android:
