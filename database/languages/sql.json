@@ -1,0 +1,45 @@
+[
+    {
+        "name": "SQL Noir",
+        "description": "SQL Noir is an web-based game that lets you play the role of a detective solving mysteries by writing actual SQL queries. It’s a unique, narrative-driven way to level up your SQL skills.",
+        "url": "https://www.sqlnoir.com/#",
+        "category": "languages",
+        "subcategory": "sql"
+    },
+    {
+        "name": "SQL Island",
+        "description": "SQL Island is a text-adventure-style educational game designed to teach beginners the fundamentals of SQL through a fun, scenario-based approach. You play as a plane crash survivor on a mysterious island where the only way to interact with inhabitants and solve challenges is by writing SQL queries ",
+        "url": "https://sql-island.informatik.uni-kl.de/",
+        "category": "languages",
+        "subcategory": "sql"
+    },
+    {
+        "name": "Mystery Knightlab",
+        "description": "The SQL Murder Mystery is a web-based, interactive SQL puzzle game. It casts you as a detective solving a murder in \"SQL City\" using actual SQL queries.",
+        "url": "https://mystery.knightlab.com/",
+        "category": "languages",
+        "subcategory": "sql"
+    },
+    {
+        "name": "SQL Squid Game",
+        "description": "SQL Squid Game is a free, browser-based SQL puzzle game inspired by Netflix’s Squid Game, SQL Murder Mystery, and other standout SQL games",
+        "url": "https://datalemur.com/sql-game/level1.html",
+        "category": "languages",
+        "subcategory": "sql"
+    },
+    {
+        "name": "SQL Police Department",
+        "description": "SQL Police Department (often called SQLPD) is an interactive online game where you step into the role of a police data analyst, solving crimes using real SQL queries. As you complete cases, you advance in rank and sharpen your SQL skills—whether you're filtering records, ordering data, removing duplicates, or joining tables.",
+        "url": "https://sqlpd.com/",
+        "category": "languages",
+        "subcategory": "sql"
+    },
+    {
+        "name": "SQL Bolt",
+        "description": "SQLBolt is a free, web-based interactive tutorial for learning SQL fundamentals through bite-sized lessons and hands-on exercises. It guides learners from the very basics of relational databases all the way through more advanced SQL operations like joins, aggregates, and table manipulation.",
+        "url": "https://sqlbolt.com/",
+        "category": "languages",
+        "subcategory": "sql"
+    }
+
+]

@@ -153,6 +153,7 @@ export const sidebarData: ISidebar[] = [
       { name: 'Swift', url: '/swift', resources: DB.swift },
       { name: 'CSS', url: '/css', resources: DB.css },
       { name: 'PHP', url: '/php', resources: DB.swift },
+      {name: 'SQL', url: '/sql', resources: DB.sql},
     ],
   },
   {
