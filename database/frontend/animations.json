@@ -152,5 +152,12 @@
     "url": "https://uiball.com/ldrs/",
     "category": "frontend",
     "subcategory": "animations"
+  },
+  {
+    "name": "Anime.js",
+    "description": "Anime.js is a fast, multipurpose and lightweight JavaScript animation library with a simple, yet powerful API.",
+    "url": "https://animejs.com/",
+    "category": "frontend",
+    "subcategory": "animations"
   }
 ]
