@@ -51,7 +51,7 @@ jobs:
         if: ${{ failure() }}
 
 
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@v6
 
         with:
           title: 'docs: Broken links found'
