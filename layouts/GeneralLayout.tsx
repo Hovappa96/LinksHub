@@ -4,21 +4,25 @@ import { SideNavbar } from 'components/SideNavbar/SideNavbar'
 import { Header } from 'components/Header/Header'
 import Sidebar from 'components/Sidebar'
 import { SkipLink } from 'components/SkipLink/SkipLink'
+import { SearchModal } from 'components/SearchModal/SearchModal'
 
 import { useContext } from 'react'
 import { IContext } from 'types'
 import { GlobalContext } from 'context/GlobalContext'
+import { useSearchModalShortcut } from 'hooks/useSearchModalShortcut'
 
 import MobileBottomNav from 'components/MobileBottomNav/MobileBottomNav'
 
 const GeneralLayout = ({ children }: { children: ReactNode }) => {
   const { sidebar } = useContext<IContext>(GlobalContext)
+  useSearchModalShortcut()
 
   return (
     <>
       <SkipLink />
       <Header />
       <SideNavbar />
+      <SearchModal />
       <div
         className={`row-start-2 row-end-3 overflow-y-scroll h-full w-full bg-gray-100 dark:bg-[#101623] ${
           sidebar ? 'max-[1024px]:overflow-hidden' : ''
