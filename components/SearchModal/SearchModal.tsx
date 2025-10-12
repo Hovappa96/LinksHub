@@ -2,15 +2,9 @@ import { useEffect, useRef, useState, useCallback } from 'react'
 import { useRouter } from 'next/router'
 import { useSearchModal } from 'context/SearchModalContext'
 import { database } from 'database/data'
-import { sidebarData } from 'database/data'
 import { Icons } from 'components/icons'
 import Logo from 'components/logo/logo'
 import { IData } from 'types'
-
-interface GroupedResult {
-  category: string
-  items: IData[]
-}
 
 const MAX_RESULTS = 50
 const RECENT_SEARCHES_KEY = 'linkshub_recent_searches'
@@ -74,13 +68,21 @@ export const SearchModal = () => {
     }
   }
 
+  const saveRecentSearch = useCallback((searchQuery: string) => {
+    if (!searchQuery.trim()) return
+
+    const recent = Array.from(new Set([searchQuery, ...recentSearches])).slice(0, 5)
+    setRecentSearches(recent)
+    localStorage.setItem(RECENT_SEARCHES_KEY, JSON.stringify(recent))
+  }, [recentSearches])
+
   const navigate = useCallback((item: IData) => {
     saveRecentSearch(query)
     close()
     setQuery('')
     setSelected(0)
     router.push(`/${item.category}/${item.subcategory}`)
-  }, [query, close, router])
+  }, [query, close, router, saveRecentSearch])
 
   const searchByKeyword = useCallback((keyword: string) => {
     saveRecentSearch(keyword)
@@ -91,15 +93,7 @@ export const SearchModal = () => {
       pathname: '/search',
       query: { query: keyword }
     })
-  }, [close, router])
-
-  const saveRecentSearch = (searchQuery: string) => {
-    if (!searchQuery.trim()) return
-
-    const recent = [...new Set([searchQuery, ...recentSearches])].slice(0, 5)
-    setRecentSearches(recent)
-    localStorage.setItem(RECENT_SEARCHES_KEY, JSON.stringify(recent))
-  }
+  }, [close, router, saveRecentSearch])
 
   const handleRecentClick = (search: string) => {
     setQuery(search)
@@ -191,7 +185,7 @@ export const SearchModal = () => {
                 <Icons.search className="h-4 w-4 text-gray-400 flex-shrink-0" />
                 <div className="flex-1 min-w-0">
                   <div className="text-sm font-medium text-gray-900 dark:text-gray-100">
-                    Search for <span className="text-primary">"{query}"</span>
+                    Search for <span className="text-primary">&ldquo;{query}&rdquo;</span>
                   </div>
                   <div className="text-xs text-gray-500 dark:text-gray-400">
                     Find all resources matching this keyword
