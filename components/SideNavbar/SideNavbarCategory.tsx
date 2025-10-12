@@ -62,7 +62,12 @@ export const SideNavbarCategory: FC<{
 
   const handleClickOutside = async () => {
     setIsOpen(false)
-    router.replace('/')
+    try {
+      await router.push('/')
+    } catch (error) {
+      // Ignore navigation errors (e.g., when clicking on modals)
+      console.debug('Navigation prevented:', error)
+    }
   }
 
   useOnClickOutside(listRef, handleClickOutside)
