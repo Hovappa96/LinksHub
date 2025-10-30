@@ -33,5 +33,12 @@
     "url": "https://flowcv.com/cover-letter-builder",
     "category": "placement-prep",
     "subcategory": "cover_letters"
+  },
+  {
+    "name": "LetterLab",
+    "description": "This site helps you instantly generate personalized, professional cover letters tailored to each job posting.",
+    "url": "https://letterlab.ai/",
+    "category": "placement-prep",
+    "subcategory": "cover_letters"
   }
 ]
