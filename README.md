@@ -1,10 +1,9 @@
-<article align="center">
+# Find the broken article tag at the top and replace with:
+<p align="center">
+  <img src="https://github.com/rupali-codes/LinksHub/assets/78981177/71b0f58e-81c9-4d96-b6c9-75c84a68a1b0" alt="LinksHub Banner"/>
+</p>
 
-![LinksHub-Banner](https://github.com/rupali-codes/LinksHub/assets/78981177/71b82c9a-9343-4854-b5cd-946193295759)
-
-</article><hr>
-
-<a name="welcome-to-linkshub"></a>
+---
 
 # Welcome to LinksHub 👋
 
