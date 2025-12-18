@@ -68,5 +68,13 @@
     "url": "https://www.perplexity.ai/",
     "category": "ai-tools",
     "subcategory": "chat_bots"
-  }
+  },
+  {
+        "name": "FlowiseAI",
+        "description": "Open source UI visual tool to build your customized LLM flow using LangchainJS.",
+        "url": "https://flowiseai.com/",
+        "category": "ai",
+        "subcategory": "chatbot",
+        "language": "JavaScript"
+    }
 ]
