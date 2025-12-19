@@ -110,5 +110,12 @@
     "description": "FlyonUI is an open-source Tailwind CSS component library that combines semantic classes with powerful JS plugins. It is designed to simplify building stunning, responsive, and interactive user interfaces.",
     "category": "frontend",
     "subcategory": "ui_libraries"
+  },
+  {
+    "name": "Prebuilt UI",
+    "url": "https://prebuiltui.com/",
+    "description": "PrebuiltUI offers a large collection of ready‑to‑use UI Components and Templates built using Tailwind CSS. Everything is fully customizable, copy‑paste friendly and free to use.",
+    "category": "frontend",
+    "subcategory": "ui_libraries"
   }
 ]
